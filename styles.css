@@ -42,11 +42,12 @@ body {
 .header__left {
   display: flex;
   align-items: center;
+  padding-top: 5px;
 }
 
 .header__left img {
-  width: 100px;
-  margin-left: 15px;
+  width: 160px;
+  margin-left: 25px;
 }
 
 .header i {
