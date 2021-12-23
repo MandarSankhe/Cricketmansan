@@ -11,7 +11,6 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="styles.css" />
     <title>CricFlix</title>
-    <script src="dark.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -88,7 +87,7 @@
                      alt="logo" />
             </a>
         </div>
-        <button id="switch" class="btn btn-info" onclick="myFunction()">Dark/Light mode</button>
+        <button id="switch" class="btn changetheme" data-type="dark" style="background-color:lightpink; color:black">Dark mode</button>
         <!--<h3 id="DarkModetext">Dark Mode is OFF</h3>
         <button class="btn" onclick="darkMode()">Darkmode</button>
         <button class="btn"onclick="lightMode()">LightMode</button>
@@ -128,7 +127,7 @@
         <div class="sidebar">
             <div class="sidebar__categories">
                 <a href="index.html">
-                    <div class="sidebar__category">                   
+                    <div class="sidebar__category">
                         <i class="material-icons">home</i>
                         <span>Home</span>
                     </div>
