@@ -54,14 +54,18 @@ body {
   padding: 0 7px;
   cursor: pointer;
 }
+.header__search {
+    position: unset;
+    padding-right: 140px;
+}
 
 .header__search form {
-  border: 1px solid #ddd;
-  height: 35px;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  color: black;
+    border: 1px solid #ddd;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: black;
 }
 
 .header__search input {

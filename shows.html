@@ -33,38 +33,14 @@
                      alt="logo" />
             </a>
         </div>
-        <button id="switch" class="btn changetheme" data-type="dark" style="background-color:lightpink; color:black">Dark mode</button>
-        <!--<h3 id="DarkModetext">Dark Mode is OFF</h3>
-        <button class="btn" onclick="darkMode()">Darkmode</button>
-        <button class="btn"onclick="lightMode()">LightMode</button>
-        <script>
-            function darkMode() {
-                var element = document.body;
-                var content = document.getElementById("DarkModetext");
-                element.className = "dark-mode";
-                content.innerText = "Dark Mode is ON";
-            }
-            function lightMode() {
-                var element = document.body;
-                var content = document.getElementById("DarkModetext");
-                element.className = "light-mode";
-                content.innerText = "Dark Mode is OFF";
-            }
-        </script>-->
+
         <div class="header__search">
             <form action="">
                 <input type="text" placeholder="Search" />
                 <button><i class="material-icons">search</i></button>
             </form>
         </div>
-
-        <div class="header__icons">
-            <i class="material-icons display-this">search</i>
-            <i class="material-icons">videocam</i>
-            <i class="material-icons">apps</i>
-            <i class="material-icons">notifications</i>
-            <i class="material-icons display-this">account_circle</i>
-        </div>
+        <button id="switch" class="btn changetheme" data-type="dark" style="background-color:lightpink; color:black">Dark mode</button>
     </div>
     <!-- Header Ends -->
     <!-- Main Body Starts -->
@@ -78,10 +54,10 @@
                         <span>Home</span>
                     </div>
                 </a>
-                <a href="movies.html" class="active" style="text-decoration: none">
+                <a href="shows.html" class="active" style="text-decoration: none">
                     <div class="sidebar__category">
                         <i class="material-icons">local_fire_department</i>
-                        <span>Movies</span>
+                        <span>Shows</span>
                     </div>
                 </a>
                 <a href="CLT20.html" style="text-decoration: none">
@@ -120,7 +96,7 @@
         <!-- Sidebar Ends -->
         <!-- Videos Section -->
         <div class="videos">
-            <h3>Movies</h3>
+            <h3>Shows</h3>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 col-md-4 col-lg-4">
@@ -238,6 +214,7 @@
 
             </div>
         </div>
+    </div>
         <script src="index.js"></script>
         <!-- Main Body Ends -->
 </body>
