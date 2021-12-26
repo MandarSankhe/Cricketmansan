@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Material Icons -->
@@ -21,7 +21,35 @@
     <link href="css/bootstrap.theme.css" rel="stylesheet" />
     <link href="css/bootstrap.theme.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/3797d89408.js" crossorigin="anonymous"></script>
-</head>
+    <style>
+        /* The heart of the matter */
+
+        .horizontal-scrollable > .row {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+            .horizontal-scrollable > .row > .col-xs-4 {
+                display: inline-block;
+                float: none;
+            }
+        /* Decorations */
+
+        .col-xs-4 {
+            
+            font-size: 24px;
+            padding-bottom: 20px;
+            padding-top: 18px;
+        }
+
+            .col-xs-4:nth-child(2n+1) {
+                
+            }
+
+            .col-xs-4:nth-child(2n+2) {
+                
+            }
+    </style>
 <body>
     <script>
         var channelID = "UC6uI0RnZS_LmYCuIeyaPi9A";
@@ -78,7 +106,6 @@
             $("#youtube_video12").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
         });
     </script>
-    <!-- Header Starts -->
     <div class="header">
 
         <div class="header__left">
@@ -88,6 +115,7 @@
                      alt="logo" />
             </a>
         </div>
+
         <div class="header__search">
             <form action="">
                 <input type="text" placeholder="Search" />
@@ -95,19 +123,20 @@
             </form>
         </div>
         <button id="switch" class="btn changetheme" data-type="dark" style="background-color:lightpink; color:black">Dark mode</button>
-
-
     </div>
-    <!-- Header Ends -->
-    <!-- Main Body Starts -->
     <div class="mainBody">
-        <!-- Sidebar Starts -->
         <div class="sidebar">
             <div class="sidebar__categories">
-                <a href="index.html"  class="active" style="text-decoration: none">
+                <a href="index.html" class="active" style="text-decoration: none">
                     <div class="sidebar__category">
                         <i class="fas fa-home fa-2x" style="color:red"></i>
                         <span>Home</span>
+                    </div>
+                </a>
+                <a href="ytvideos.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fab fa-youtube fa-2x"></i>
+                        <span>Dev`s YT Videos</span>
                     </div>
                 </a>
                 <a href="shows.html" style="text-decoration: none">
@@ -116,7 +145,7 @@
                         <span>Shows</span>
                     </div>
                 </a>
-                <a href="#" style="text-decoration: none">
+                <a href="movies.html" style="text-decoration: none">
                     <div class="sidebar__category">
                         <i class="fas fa-film fa-2x"></i>
                         <span>Movies</span>
@@ -126,7 +155,6 @@
                     <div class="sidebar__category">
                         <i class="fas fa-baseball-ball fa-2x"></i>
                         <span>CLT20</span>
-
                     </div>
                 </a>
             </div>
@@ -155,78 +183,189 @@
             </div>
             <hr />
         </div>
-        <!-- Sidebar Ends -->
-        <!-- Videos Section -->
         <div class="videos">
-            <h3>Latest Videos</h3>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
+                <h3>Shows</h3>
+                <div class="container horizontal-scrollable">
+
+                    <div class="row" style="overflow-x: scroll">
+                        <div class="col-xs-4">
+                            <div class="video">
+                                <a href="resources/shows/stranger-things.html">
+                                    <img src="resources/shows/stranger-things.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Stranger Things</h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video2" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
+                        <div class="col-xs-4">
+                            <div class="video">
+                                <a href="resources/shows/stranger-things.html">
+                                    <img src="resources/shows/stranger-things.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Stranger Things</h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video3" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
+                        <div class="col-xs-4">
+                            <div class="video">
+                                <a href="resources/shows/stranger-things.html">
+                                    <img src="resources/shows/stranger-things.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Stranger Things</h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video4" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
+                        <div class="col-xs-4">
+                            <div class="video">
+                                <a href="resources/shows/stranger-things.html">
+                                    <img src="resources/shows/stranger-things.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Stranger Things</h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video5" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
+                        <div class="col-xs-4">
+                            <div class="video">
+                                <a href="resources/shows/stranger-things.html">
+                                    <img src="resources/shows/stranger-things.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Stranger Things</h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video6" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
+                        <div class="col-xs-4">
+                            <div class="video">
+                                <a href="resources/shows/stranger-things.html">
+                                    <img src="resources/shows/stranger-things.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Stranger Things</h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video7" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video8" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video9" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video10" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video11" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe id="youtube_video12" width="257.48" height="144.83" frameborder="0" allowfullscreen></iframe>
+                        <div class="col-xs-4">
+                            <div class="video">
+                                <a href="resources/shows/stranger-things.html">
+                                    <img src="resources/shows/stranger-things.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Stranger Things</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
+                <h3>Movies</h3>
+                 <div class="row" style="overflow-x: scroll">
+                     <div class="col-sm-5 col-md-4 col-lg-4">
+                         <div class="video">
+                             <a href="resources/shows/stranger-things.html">
+                                 <img src="resources/shows/stranger-things.jpg" width="257.48" height="144.83"</img>
+                             </a>
+                             <h5>Stranger Things</h5>
+                         </div>
+                     </div>
+                 </div>
+                    <!--<div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1ZE5VVYxzA4KcuS9cTlQ9IO5zlQo5LrI6/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M3 CSK vs Sixers</h5>
         </div>
     </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1GVoQPqahmEsOxv0wxKDDS7fwKqVp8X_i/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M4 MI vs H.Lions</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1YazAgyryWiScYapVJeVOHufk5YY2rCS8/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M5 KKR vs Aukland</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1TGYYus-_rK_BbL0Z5ic7ZJW54Or6rb8Y/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M7 CSK vs H.Lions</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1jRrlduoQ3y25pwj9Vu_xJdvuTVloMP57/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M8 Aukland vs Titans</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1YZOXKZ1o8N6KDy7j0ejUjfoYSsvec3-U/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M10 H.Lions vs Sixers</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1d_Ak7i2pwXlY6jRedcxqvkRw9am_9lOC/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M13 H.Lions vs Yorkshire</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1nRJQGiZIUy6Ywz9C2kmKJvlnXuaVFhXv/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M14 CSK vs MI</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1Bi3rT1RslQRn2mYgUrgyHWUqkForfYrc/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M15 Perth vs DD</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/13IRA_WsY20LIAYIyZBVyvV8qj5NXlijz/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M16 KKR vs Titans</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1HRvk0cz1kcRA4LUFD8-JfTivfdfPfkQT/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M17 CSK vs Yorkshire</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1p5e9TpTUkkQv1jzhsxKMEuruWubrHcBV/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M18 MI vs Sixers</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1bruqn6UpiWn9e6h-1-MGWlaVcFIc_9cr/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M19 Perth vs Aukland</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1N6_GwGX2hCfs2IwPXjRuJGF8SE8H1wCc/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M21 1st Semi-Final</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1J53ke09Nipbc-2YiMKryNr545-KGCHQs/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M2 2nd Semi-Final</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1zn0TT10_twx8u8u3K7FrpmKyhPVNB-sh/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2012 M23 Final</h5>
+        </div>
+    </div>
+    <div class="col-sm-5 col-md-4 col-lg-4">
+        <div class="video">
+            <iframe src="https://drive.google.com/file/d/1hf97fh53UT-7RJPG1kKUFt6zOtj2qtec/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+            <h5>2014 M1 KKR vs CSK</h5>
+        </div>
+    </div>-->
+                </div>
+
+
+            </div>
+                </div>
+            </div>
     <script src="index.js"></script>
     <!-- Main Body Ends -->
 </body>
