@@ -171,6 +171,11 @@ hr {
 
   margin-bottom: 30px;
 }
+    .video:hover {
+        transform: scale(1.5);
+        text-align:center
+    }
+
 
 .author img {
   object-fit: cover;
