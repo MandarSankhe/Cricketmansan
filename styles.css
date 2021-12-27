@@ -171,10 +171,13 @@ hr {
     transition: transform .3s;
     margin-bottom: 30px;
 }
+
     .video:hover {
         transform: scale(1.3);
-        text-align:center
+        text-align: center
     }
+
+
 
 
 .author img {
@@ -257,8 +260,10 @@ h1 {
   .header__search input {
     width: 300px;
   }
-    .video:hover {
 
+    .video:hover {
+        transform: none;
+        text-align:left
     }
 
 }
