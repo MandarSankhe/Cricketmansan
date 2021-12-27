@@ -167,12 +167,12 @@ hr {
 }
 
 .video {
-  width: 310px;
-
-  margin-bottom: 30px;
+    width: 310px;
+    transition: transform .3s;
+    margin-bottom: 30px;
 }
     .video:hover {
-        transform: scale(1.5);
+        transform: scale(1.3);
         text-align:center
     }
 
@@ -244,13 +244,13 @@ h1 {
     display: none;
   }
 
-  .show-sidebar {
-    display: inline;
-    position:relative;
-    top: 0.0rem;
-    height: auto;
-    font-size: 10px;
-  }
+    .show-sidebar {
+        display: inline;
+        position: relative;
+        top: 0.0rem;
+        height: auto;
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 941px) {
