@@ -24,10 +24,11 @@
     <style>
         /* The heart of the matter */
 
-            .horizontal-scrollable > .row {
-                overflow-x: auto;
-                white-space: nowrap;
-            }
+        .horizontal-scrollable > .row {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
 
                 .horizontal-scrollable > .row > .col-xs-4 {
                     display: inline-block;
@@ -40,6 +41,7 @@
                 padding-bottom: 20px;
                 padding-top: 18px;
             }
+        
         @media (max-width: 768px) {
             .video a img {
                 width: 135px;
@@ -54,6 +56,7 @@
             }
   
     </style>
+</head>
 <body>
     <script>
         var channelID = "UC6uI0RnZS_LmYCuIeyaPi9A";
@@ -189,7 +192,10 @@
         </div>
         <div class="videos">
             <div class="container">
-                <h3>Shows</h3>
+                <h3>
+                    Popular Shows
+                    <a href="shows.html" style="color:hotpink; text-decoration: none; font-size:medium; padding-left:65%" >Jump to Shows<i class="fas fa-chevron-right"></i></a>
+                </h3>
                 <div class="container horizontal-scrollable">
 
                     <div class="row" style="overflow-x: scroll">
@@ -250,8 +256,13 @@
                             </div>
                         </div>
                     </div>
+
+                    
                 </div>
-                <h3>Movies</h3>
+                <h3>
+                    Popular Movies
+                    <a href="movies.html" style="color:hotpink; text-decoration: none; font-size:medium; padding-left:65%">Jump to Movies<i class="fas fa-chevron-right"></i></a>
+                </h3>
                 <div class="container horizontal-scrollable">
                     <div class="row" style="overflow-x: scroll">
                         <div class="col-xs-4">
