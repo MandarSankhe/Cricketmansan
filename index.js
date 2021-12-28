@@ -3,9 +3,12 @@ console.log(menu);
 const sidebar = document.querySelector('.sidebar');
 console.log(sidebar);
 
+function closeNav() {
+    document.getElementById("menu").style.width = "0";
+}
+
 menu.addEventListener('click', function () {
-    sidebar.classList.toggle('show-sidebar');
-                    
+    sidebar.classList.toggle('show-sidebar');               
 });
 
     if (localStorage.getItem('theme') == 'darkTheme') {
