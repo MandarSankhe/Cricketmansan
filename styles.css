@@ -218,6 +218,9 @@ h1 {
   color: rgb(3, 3, 3);
 }
 
+.footer {
+    display: none
+}
 
 @media (max-width: 425px) {
     .header__search {
@@ -254,6 +257,9 @@ h1 {
         height: auto;
         font-size: 10px;
     }
+/*    .footer {
+      display:inline-block
+    }*/
 }
 
 @media (max-width: 941px) {

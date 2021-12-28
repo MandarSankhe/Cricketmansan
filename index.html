@@ -23,7 +23,13 @@
     <script src="https://kit.fontawesome.com/3797d89408.js" crossorigin="anonymous"></script>
     <style>
         /* The heart of the matter */
-
+        .container h3 a {
+                color:hotpink; 
+                text-decoration: none; 
+                font-size:medium; 
+                padding-left:65%; 
+                vertical-align:top
+        }
         .horizontal-scrollable > .row {
             overflow-x: auto;
             white-space: nowrap;
@@ -41,10 +47,26 @@
                 padding-bottom: 20px;
                 padding-top: 18px;
             }
+        @media (max-width: 991px){
+            .container h3 a {
+                font-size: 11px;
+                padding-left: 65%;
+            }
+        }
         @media (max-width: 768px) {
             .video a img {
                 width: 135px;
                 height: 76px;
+            }
+            .container h3 a {
+                font-size: x-small;
+                padding-left: 55%;
+            }
+        }
+        @media (max-width: 600px) {
+            .container h3 a {
+                font-size: x-small;
+                padding-left: 43%;
             }
         }
         @media (max-width: 427px) {
@@ -52,6 +74,10 @@
                     width: 85px;
                     height: 47.5px;
                 }
+            .container h3 a {
+                font-size: x-small;
+                padding-left: 23%;
+            }
             }
   
     </style>
@@ -193,7 +219,7 @@
             <div class="container">
                 <h3>
                     Popular Shows
-                    <a href="shows.html" style="color:hotpink; text-decoration: none; font-size:medium; padding-left:65%; vertical-align:top">Jump to Shows<i class="fas fa-chevron-right"></i></a>
+                    <a href="shows.html">Jump to Shows<i class="fas fa-chevron-right"></i></a>
                 </h3>
                 <div class="container horizontal-scrollable">
                     <div class="row" style="overflow-x: scroll">
@@ -241,7 +267,7 @@
                 </div>
                 <h3>
                     Popular Movies
-                    <a href="movies.html" style="color:hotpink; text-decoration: none; font-size:medium; padding-left:65%; vertical-align:text-top">Jump to Movies<i class="fas fa-chevron-right"></i></a>
+                    <a href="movies.html">Jump to Movies<i class="fas fa-chevron-right"></i></a>
                 </h3>
                 <div class="container horizontal-scrollable">
                     <div class="row" style="overflow-x: scroll">
@@ -277,8 +303,7 @@
                                 <a href="resources/movies/freeguy.html">
                                     <img src="resources/movies/freeguy.jpg" width="257.48" height="144.83"</img>
                                 </a>
-                                <h5>Free Guy</h5>
-                                <h6>2021</h6>
+                                <h5>Free Guy-2021</h5>
                             </div>
                         </div>
                     </div>
@@ -289,6 +314,38 @@
             </div>
                 </div>
             </div>
+    <div class="footer" id="myFooter">
+        <a href="index.html" class="active" style="text-decoration: none">
+            <div class="col-sm-1">
+                <i class="fas fa-home fa-2x" style="color:red"></i>
+                <span>Home</span>
+            </div>
+        </a>
+        <a href="ytvideos.html" style="text-decoration: none">
+            <div class="col-sm-1">
+                <i class="fab fa-youtube fa-2x"></i>
+                <span>Dev`s YT Videos</span>
+            </div>
+        </a>
+        <a href="shows.html" style="text-decoration: none">
+            <div class="col-sm-1">
+                <i class="fas fa-tv fa-2x"></i>
+                <span>Shows</span>
+            </div>
+        </a>
+        <a href="movies.html" style="text-decoration: none">
+            <div class="col-sm-1">
+                <i class="fas fa-film fa-2x"></i>
+                <span>Movies</span>
+            </div>
+        </a>
+        <a href="CLT20.html" style="text-decoration: none">
+            <div class="col-sm-1">
+                <i class="fas fa-baseball-ball fa-2x"></i>
+                <span>CLT20</span>
+            </div>
+        </a>
+    </div>
     <script src="index.js"></script>
     <!-- Main Body Ends -->
 </body>
