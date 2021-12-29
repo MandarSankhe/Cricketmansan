@@ -57,12 +57,33 @@
                 padding-left: 55%;
             }
         }
+         @media (max-width: 694px) {
+             .container h3 a button {
+                 position: fixed 
+             }
+         }
+        @media (max-width: 681px) {
+            .container h3 a button {
+                left: 79%
+            }
+        }
 
         @media (max-width: 427px) {
                 .video a img {
                     width: 85px;
                     height: 47.5px;
                 }
+
+            .container h3 {
+                font-size: small
+            }
+            .container h3 a button {
+                left: 70%;
+                height: 20px;
+                width: 80px;
+                font-size: smaller;
+                
+            }
             }
   
     </style>
@@ -205,7 +226,7 @@
             <div class="container">
                 <h3>
                     Popular Shows
-                    <a href="shows.html"><button type="button" class="btn btn-danger btn-sm" style="background-color:dimgrey; color:lightpink; position:relative">Jump to Shows<i class="fas fa-chevron-right"></i></button></a>
+                    <a href="shows.html"><button type="button" class="btn btn-danger btn-sm" style="background-color:dimgrey; color:lightpink">Jump to  Shows<i class="fas fa-chevron-right"></i></button></a>
                 </h3>
                 <div class="container horizontal-scrollable">
                     <div class="row" style="overflow-x: scroll">
