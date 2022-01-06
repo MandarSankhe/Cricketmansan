@@ -36,9 +36,9 @@
         </div>
 
         <div class="header__search">
-            <form action="">
-                <input type="text" placeholder="Search" />
-                <button><i class="material-icons">search</i></button>
+            <form id="search-vid">
+                <input type="text" name="search" placeholder="Search" />
+                <button id="Search" onkeypress="searchfn()"><i class="material-icons">search</i></button>
             </form>
         </div>
         <button id="switch" class="btn changetheme" data-type="dark" style="background-color:lightpink; color:black">Dark mode</button>
@@ -112,7 +112,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
+                        <div class="video" id="searchme">
                             <a href="resources/shows/stranger-things.html">
                                 <img src="resources/shows/stranger-things.jpg" width="257.48" height="144.83"</img>
                             </a>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
+                        <div class="video" id="searchme">
                             <a href="resources/shows/GOT.html">
                                 <img src="resources/shows/GOT.jpg" width="257.48" height="144.83"</img>
                             </a>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
+                        <div class="video" id="searchme">
                             <a href="resources/shows/lostinspace.html">
                                 <img src="resources/shows/lostinspace.jpg" width="257.48" height="144.83"</img>
                             </a>
@@ -136,7 +136,7 @@
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
+                        <div class="video" id="searchme">
                             <a href="resources/shows/prisonbreak.html">
                                 <img src="resources/shows/prisonbreak.webp" width="257.48" height="144.83"</img>
                             </a>
@@ -144,7 +144,7 @@
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
+                        <div class="video" id="searchme">
                             <a href="resources/shows/squidgame.html">
                                 <img src="resources/shows/squidgame.jpg" width="257.48" height="144.83"</img>
                             </a>
@@ -152,7 +152,7 @@
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
+                        <div class="video" id="searchme">
                             <a href="resources/shows/mrrobot.html">
                                 <img src="resources/shows/mrrobot.jpg" width="257.48" height="144.83"</img>
                             </a>
@@ -160,11 +160,19 @@
                         </div>
                     </div>
                     <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
+                        <div class="video" id="searchme">
                             <a href="resources/shows/mindhunter.html">
                                 <img src="resources/shows/mindhunter.jpg" width="257.48" height="144.83"</img>
                             </a>
                             <h5>Mindhunter</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video" id="searchme">
+                            <a href="resources/shows/blackmirror.html">
+                                <img src="resources/shows/blackmirror.jpg" width="257.48" height="144.83"</img>
+                            </a>
+                            <h5>Black Mirror</h5>
                         </div>
                     </div>
 
@@ -207,6 +215,7 @@
         </a>
     </div>
     <script src="index.js"></script>
+    <script src="search.js"></script>
     <!-- Main Body Ends -->
 </body>
 </html>

@@ -89,61 +89,6 @@
     </style>
 </head>
 <body>
-    <script>
-        var channelID = "UC6uI0RnZS_LmYCuIeyaPi9A";
-        var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
-        $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL) + channelID, function (data) {
-            var link = data.items[0].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-
-            /*For 2nd video: */
-            var link = data.items[01].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video2").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-
-            /*For 3rd video: */
-            var link = data.items[2].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video3").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-
-            var link = data.items[3].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video4").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-
-            var link = data.items[4].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video5").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0"); /* so we have to add those 3 lines of code, depends of our requirement*/
-
-            var link = data.items[5].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video6").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-
-            var link = data.items[6].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video7").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-
-            var link = data.items[7].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video8").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-
-            var link = data.items[8].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video9").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-
-            var link = data.items[9].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video10").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-
-            var link = data.items[10].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video11").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-
-            var link = data.items[11].link;
-            var id = link.substr(link.indexOf("=") + 1);
-            $("#youtube_video12").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
-        });
-    </script>
     <div class="header">
 
         <div class="header__left">
@@ -155,9 +100,9 @@
         </div>
 
         <div class="header__search">
-            <form action="">
-                <input type="text" placeholder="Search" />
-                <button><i class="material-icons">search</i></button>
+            <form id="search-vid">
+                <input type="text" name="search" placeholder="Search" />
+                <button id="Search" onkeypress="searchfn()"><i class="material-icons">search</i></button>
             </form>
         </div>
         <button id="switch" class="btn changetheme" data-type="dark" style="background-color:lightpink; color:black">Dark mode</button>
@@ -231,7 +176,7 @@
                 <div class="container horizontal-scrollable">
                     <div class="row" style="overflow-x: scroll">
                         <div class="col-xs-4">
-                            <div class="video">
+                            <div class="video" id="searchme">
                                 <a href="resources/shows/stranger-things.html">
                                     <img src="resources/shows/stranger-things.jpg" width="257.48" height="144.83"</img>
                                 </a>
@@ -239,7 +184,7 @@
                             </div>
                         </div>
                         <div class="col-xs-4">
-                            <div class="video">
+                            <div class="video" id="searchme">
                                 <a href="resources/shows/GOT.html">
                                     <img src="resources/shows/GOT.jpg" width="257.48" height="144.83"</img>
                                 </a>
@@ -284,6 +229,14 @@
                                     <img src="resources/shows/mindhunter.jpg" width="257.48" height="144.83"</img>
                                 </a>
                                 <h5>Mindhunter</h5>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="video">
+                                <a href="resources/shows/blackmirror.html">
+                                    <img src="resources/shows/blackmirror.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Black Mirror</h5>
                             </div>
                         </div>
                     </div>
@@ -381,6 +334,7 @@
         </a>
     </div>
     <script src="index.js"></script>
+    <script src="search.js"></script>
     <!-- Main Body Ends -->
 </body>
 </html>
