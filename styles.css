@@ -288,11 +288,9 @@ h1 {
   }
 
   .video {
-      
-  }
+      text-align: left  }
     .video:hover {
-        
-        
+        text-align: left
     }
 
 }
