@@ -15,11 +15,25 @@ body {
     color: black;
     
 }
-.dark {
+body.dark {
     background-color: #252525;
     color: white;
+    
 }
 
+    body h3 a button {
+        background-color: #C83069 !important;
+        color: white;
+        border-color: dimgray !important;
+        border-radius: 2px;
+    }
+
+body.dark h3 a button {
+    background-color: dimgrey !important;
+    color: white;
+    border-color: #C83069 !important;
+    border-radius: 2px;
+}
 
 
 
@@ -168,9 +182,9 @@ hr {
 
 .video {
     width: 310px;
-    transition: transform .2s;
+    transition: transform .3s ease-in-out;
     margin-bottom: 30px;
-    text-align:center
+    text-align: center
 }
 
     .video:hover {
