@@ -250,12 +250,12 @@ h1 {
 
 @media (max-width: 425px) {
     .header__search {
-        margin-left:1px;
-        width:10px !important
+        padding-right:190px;
+        width:10px !important;
     }
-    .header__left img{
-        width:60%;
-        height:60%
+    .header__left img {
+        width: 60%;
+        height: 60%
     }
     .header__icons .material-icons {
         display: none;
