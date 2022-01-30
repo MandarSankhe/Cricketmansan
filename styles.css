@@ -250,8 +250,8 @@ h1 {
 
 @media (max-width: 425px) {
     .header__search {
-
-        width:50px
+        margin-left:1px;
+        width:10px !important
     }
     .header__left img{
         width:60%;
