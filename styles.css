@@ -250,7 +250,7 @@ h1 {
 
 @media (max-width: 425px) {
     .header__search {
-        width: 100px;
+        display:none;
     }
 
   .header__icons .material-icons {
@@ -269,7 +269,7 @@ h1 {
 
 @media (max-width: 768px) {
     .header__search {
-        width: 200px;
+        width: 100px;
     }
 
   .sidebar {
