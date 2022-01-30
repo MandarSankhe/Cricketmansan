@@ -258,6 +258,8 @@ h1 {
     }
     .header__left img {
         padding-right: 150px;
+        width: 80%;
+        height: 80%
     }
     .header__icons .material-icons {
         display: none;
