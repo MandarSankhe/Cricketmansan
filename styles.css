@@ -250,16 +250,16 @@ h1 {
 
 @media (max-width: 425px) {
     .header__search {
-        position:absolute;
+/*        position:absolute;
         top: 20px;
         right:37%;
         padding-right:150px;
-        width:10px !important;
+        width:10px !important;*/
+       display:none
     }
     .header__left img {
-        padding-right: 150px;
-        width: 80%;
-        height: 80%
+        width: 40%;
+        height: 40%
     }
     .header__icons .material-icons {
         display: none;
