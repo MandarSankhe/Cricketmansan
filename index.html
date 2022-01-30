@@ -177,8 +177,8 @@
 
         <div class="header__search">
             <form id="search-vid">
-                <input type="text" name="search" placeholder="Search" />
-                <button id="Search" onkeypress="searchfn()"><i class="material-icons">search</i></button>
+                <label for="searchInput"></label>
+                <input type="text" id="searchInput" name="searchInput" placeholder="Search" />
             </form>
         </div>
         <button id="switch" class="btn changetheme" data-type="dark" style="background-color:lightpink; color:black">Dark mode</button>
@@ -577,8 +577,8 @@
             else {
                 document.getElementById('row1').scrollLeft += 1020;
             }
-            
-            
+
+
         };
         buttonLeft.onclick = function () {
             if ($(window).width() < 992) {
@@ -590,7 +590,7 @@
             else {
                 document.getElementById('row1').scrollLeft -= 1020;
             }
-            
+
         };
 
     </script>
@@ -625,6 +625,7 @@
         };
 
     </script>
+    <script src = "search.js"></script>
     <!-- Main Body Ends -->
 </body>
 </html>
