@@ -250,8 +250,8 @@ h1 {
 
 @media (max-width: 425px) {
     .header__search {
-    display: none;
-  }
+        width: 100px;
+    }
 
   .header__icons .material-icons {
     display: none;
@@ -268,9 +268,9 @@ h1 {
 
 
 @media (max-width: 768px) {
-  .header__search {
-    display: none;
-  }
+    .header__search {
+        width: 200px;
+    }
 
   .sidebar {
     display: none;
