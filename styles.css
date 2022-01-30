@@ -250,12 +250,16 @@ h1 {
 
 @media (max-width: 425px) {
     .header__search {
-        display:none;
-    }
 
-  .header__icons .material-icons {
-    display: none;
-  }
+        width:50px
+    }
+    .header__left img{
+        width:60%;
+        height:60%
+    }
+    .header__icons .material-icons {
+        display: none;
+    }
 
   .header__icons .display-this {
     display: inline;
