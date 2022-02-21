@@ -23,7 +23,6 @@
     <script src="https://kit.fontawesome.com/3797d89408.js" crossorigin="anonymous"></script>
     <style>
         /* The heart of the matter */
-  
         /* width */
         .row::-webkit-scrollbar {
             width: 4px;
@@ -103,6 +102,16 @@
             }
         }
         @media (max-width: 992px) {
+            .video {
+                width: 171px;
+                white-space: initial;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+                .video:hover {
+                    overflow: visible
+                }
             .video a img {
                 width: 170px;
                 height: 95px;
@@ -114,6 +123,16 @@
         }
 
             @media (max-width: 768px) {
+                .video {
+                    width: 136px;
+                    height:127px;
+                    white-space: initial;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .video:hover {
+                    overflow:visible
+                }
                 .video a img {
                     width: 135px;
                     height: 76px;
@@ -145,10 +164,24 @@
             }
 
             @media (max-width: 427px) {
+                .video {
+                    width: 86px;
+                    height:99px;
+                    white-space: initial;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
 
+                    .video:hover {
+                        overflow: visible
+                    }
+                
                 .video a img {
                     width: 85px;
                     height: 47.5px;
+                }
+                .col-xs-4{
+                    
                 }
                 .container h3 {
                     font-size: small
