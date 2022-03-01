@@ -382,21 +382,21 @@ h1 {
         height: 100%;
         background: #1d184d;
         z-index: -1;
-        -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-        -moz-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-        -o-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-        -ms-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-        transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+        -webkit-transform: rotate3d(0, 0, 1, -65deg) translate3d(0, -3em, 0);
+        -moz-transform: rotate3d(0, 0, 1, -65deg) translate3d(0, -3em, 0);
+        -o-transform: rotate3d(0, 0, 1, -65deg) translate3d(0, -3em, 0);
+        -ms-transform: rotate3d(0, 0, 1, -65deg) translate3d(0, -3em, 0);
+        transform: rotate3d(0, 0, 1, -65deg) translate3d(0, -3em, 0);
         -webkit-transform-origin: 0% 100%;
         -moz-transform-origin: 0% 100%;
         -o-transform-origin: 0% 100%;
         -ms-transform-origin: 0% 100%;
         transform-origin: 0% 100%;
-        -webkit-transition: -webkit-transform 0.4s, opacity 0.4s, background-color 0.4s;
-        -moz-transition: -webkit-transform 0.4s, opacity 0.4s, background-color 0.4s;
-        -o-transition: -webkit-transform 0.4s, opacity 0.4s, background-color 0.4s;
-        -ms-transition: -webkit-transform 0.4s, opacity 0.4s, background-color 0.4s;
-        transition: transform 0.4s, opacity 0.4s, background-color 0.4s;
+        -webkit-transition: -webkit-transform 0.7s, opacity 0.7s, background-color 0.7s;
+        -moz-transition: -webkit-transform 0.7s, opacity 0.7s, background-color 0.7s;
+        -o-transition: -webkit-transform 0.7s, opacity 0.7s, background-color 0.7s;
+        -ms-transition: -webkit-transform 0.7s, opacity 0.7s, background-color 0.7s;
+        transition: transform 0.7s, opacity 0.7s, background-color 0.7s;
     }
 .container h3 a:hover {
     color:white
