@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Material Icons -->
-
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- CSS File -->
     <link rel="stylesheet" href="styles.css" />
@@ -16,6 +16,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -30,6 +31,7 @@
             width: 4px;
             height: 5px
         }
+
         .read-btn {
             float: right;
         }
@@ -45,7 +47,7 @@
             border-radius: 10px;
         }
 
-        .container h3 a {           
+        .container h3 a {
             text-decoration: none;
             font-size: small;
         }
@@ -116,6 +118,9 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
+            .owl-carousel .owl-item img {
+                width: 171px
+            }
 
                 .video a img {
                     width: 170px;
@@ -135,6 +140,9 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
+            .owl-carousel .owl-item img {
+                width: 136px
+            }
 
                 .video a img {
                     width: 135px;
@@ -147,19 +155,18 @@
 
             .read-btn {
                 margin-right: 84px;
-                
-
             }
-                .container h3 a {
-                    font-size: 10px
-                }
+
+            .container h3 a {
+                font-size: 10px
+            }
 
             .carousel-controls {
                 display: none
             }
         }
 
-        @media (max-width: 655px){
+        @media (max-width: 655px) {
             .read-btn {
                 margin-right: 64px;
             }
@@ -168,6 +175,7 @@
                 font-size: 10px
             }
         }
+
         @media (max-width: 607px) {
             .read-btn {
                 margin-right: 44px;
@@ -177,6 +185,7 @@
                 font-size: 10px
             }
         }
+
         @media (max-width: 511px) {
             .read-btn {
                 margin-right: 24px;
@@ -184,7 +193,6 @@
 
             .container h3 a {
                 font-size: 10px;
-                
             }
         }
 
@@ -196,6 +204,9 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
+            .owl-carousel .owl-item img {
+                width: 86px
+            }
 
                 .video a img {
                     width: 85px;
@@ -206,6 +217,7 @@
             .container h3 {
                 font-size: small
             }
+
             .read-btn {
                 margin-right: 24px;
                 width: 95px;
@@ -215,7 +227,6 @@
 
             .container h3 a {
                 font-size: 8px;
-
             }
         }
     </style>
@@ -461,7 +472,7 @@
                     Popular Movies
                     <button type="button" class="btn btn-danger btn-sm read-btn"><a href="movies.html">Jump to  Movies<i class="fas fa-chevron-right"></i></a></button>
                 </h3>
-                <div class="container horizontal-scrollable">
+                <!--<div class="container horizontal-scrollable">
                     <div id="row2" class="row" style="overflow-x: scroll; width:85%; float:left; scroll-behavior: smooth">
                         <div class="col-xs-4">
                             <div class="video">
@@ -629,8 +640,172 @@
                         <div id="slideLeft1" class="control prev"><i class="fa fa-angle-left fa-3x">&nbsp;</i></div>
                         <div id="slideRight1" class="control next"><i class="fa fa-angle-right fa-3x">&nbsp;</i></div>
                     </div>
+                </div>-->
+                <div class="carousel-wrap">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/jumanji.html">
+                                    <img src="resources/movies/jumanji.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Jumanji</h5>
+                                <h6>(2 movies)</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/spiderman.html">
+                                    <img src="resources/movies/spiderman.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Spider-Man</h5>
+                                <h6>(9 movies)</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/harrypotter.html">
+                                    <img src="resources/movies/harrypotter.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Harry Potter + Fantastic Beasts</h5>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/beyondallboundaries.html">
+                                    <img src="resources/movies/beyondallboundaries.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Beyond All</h5>
+                                <h6>Boundaries(2013)</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/journey.html">
+                                    <img src="resources/movies/journey.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Journey</h5>
+                                <h6>(2 movies)</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/freeguy.html">
+                                    <img src="resources/movies/freeguy.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Free Guy</h5>
+                                <h6>2021</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/POTC.html">
+                                    <img src="resources/movies/POTC.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Pirates of the Caribbean</h5>
+                                <h6>5 movies</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/goal.html">
+                                    <img src="resources/movies/goal.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Goal</h5>
+                                <h6>2 movies</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/fastandfurious.html">
+                                    <img src="resources/movies/fastandfurious.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Fast and Furious</h5>
+                                <h6>10 movies</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/deadpool.html">
+                                    <img src="resources/movies/deadpool.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Deadpool</h5>
+                                <h6>2 movies</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/twilight.html">
+                                    <img src="resources/movies/twilight.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Twilight</h5>
+                                <h6>5 movies</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/aladdin.html">
+                                    <img src="resources/movies/aladdin.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Aladdin</h5>
+                                <h6>2019</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/POP.html">
+                                    <img src="resources/movies/POP.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Prince of Persia</h5>
+                                <h6>2010</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/tinderswindler.html">
+                                    <img src="resources/movies/tinderswindler.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>Tinder Swindler</h5>
+                                <h6>2022</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/ailoveyou.html">
+                                    <img src="resources/movies/ailoveyou.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>AI Love You</h5>
+                                <h6>2022</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/united.html">
+                                    <img src="resources/movies/united.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>United</h5>
+                                <h6>2011</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/girlnextdoor.html">
+                                    <img src="resources/movies/girlnextdoor.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>The Girl </h5>
+                                <h6>Next Door - 2004</h6>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="video">
+                                <a href="resources/movies/girlwithdragontatoo.html">
+                                    <img src="resources/movies/girlwithdragontatoo.jpg" width="257.48" height="144.83"</img>
+                                </a>
+                                <h5>The Girl With</h5>
+                                <h6>The Dragon Tattoo - 2011</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
 
@@ -751,6 +926,33 @@
                 }
             }
         });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js'></script>
+    <script src='https://use.fontawesome.com/826a7e3dce.js'></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 200,
+            nav: true,
+            navText: [
+                "<i class='fa fa-caret-left'></i>",
+                "<i class='fa fa-caret-right'></i>"
+            ],
+            autoplay: false,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
     </script>
     <!-- Main Body Ends -->
 </body>
