@@ -139,9 +139,9 @@ body.dark .fa-angle-right {
   margin-bottom: 15px;
   margin-top: 15px;
 }
-    .sidebar__categories .active {
-        background: #C0C0C0;
-    }
+.active {
+    background: #C0C0C0;
+}
 
 .sidebar__category {
   display: flex;
@@ -400,42 +400,4 @@ h1 {
     }
 .container h3 a:hover {
     color:white
-}
-
-
-.owl-carousel .owl-item img {
-    width: 257.48px
-}
-.carousel-wrap {
-    margin: 29px;
-    /*padding-right: 7%;*/
-    width: 80%;
-    position: relative;
-}
-
-/* fix blank or flashing items on carousel */
-.owl-carousel .item {
-    position: relative;
-    z-index: 100;
-    -webkit-backface-visibility: hidden;
-}
-
-/* end fix */
-.owl-nav > div {
-    margin-top: -26px;
-    position: absolute;
-    top: 50%;
-    color: #cdcbcd;
-}
-
-.owl-nav i {
-    font-size: 52px;
-}
-
-.owl-nav .owl-prev {
-    left: -30px;
-}
-
-.owl-nav .owl-next {
-    right: -30px;
 }
