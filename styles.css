@@ -193,13 +193,16 @@ hr {
 }
 
 .video {
-    width: 310px;
+    width: 257.48px;
     transition: transform .3s ease-in-out;
     margin-bottom: 30px;
-    text-align: center
+    text-align: center;
+overflow: hidden
 }
-
-    .video:hover {
+.video a img{
+transition: transform .3s ease-in-out;
+}
+   .video img:hover {
         transform: scale(1.1);
     }
 
