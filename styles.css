@@ -129,7 +129,7 @@ body.dark .fa-angle-right {
 .sidebar {
     height: 100%;
     width: 230px;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .sidebar__categories {
@@ -260,7 +260,7 @@ h1 {
         width:10px !important;*/
        display:none
     }
-    .header__left img {
+    .header__left a {
         width: 40%;
         height: 40%
     }
