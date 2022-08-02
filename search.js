@@ -316,7 +316,7 @@ $("#searchInput").on("keydown", function () {
 
 
         $img.attr({
-            src: item.icon,
+            src: "/" + item.icon,
             alt: item.label
         });
 
