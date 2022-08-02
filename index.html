@@ -309,7 +309,7 @@
                 </h3>
                 <div class="container horizontal-scrollable">
 
-                    <div id="row1" class="row" style="overflow-x: scroll; width:85%; float:left; ; scroll-behavior: smooth">
+                    <div id="row1" class="row" style="overflow-x: scroll; width:85%; float:left; scroll-behavior: smooth">
                         <div class="col-xs-4">
                             <div class="video" id="searchme">
                                 <a href="resources/shows/breakingbad.html">
@@ -427,7 +427,7 @@
                                 <a href="resources/shows/bettercallsaul.html">
                                     <img src="resources/shows/bettercallsaul.jpg" width="257.48" height="144.83"</img>
                                 </a>
-                                <h5>Better Call Ssul</h5>
+                                <h5>Better Call Saul</h5>
                             </div>
                         </div>
                         <div class="col-xs-4">
@@ -787,26 +787,6 @@
 
         };
 
-    </script>
-    <script>
-        document.querySelector('#searchInput').addEventListener('keyup', function (e) {
-            // UI Element
-            let namesLI = document.getElementsByClassName('col-xs-4');
-
-            // Get Search Query
-            let searchQuery = searchInput.value.toLowerCase();
-
-            // Search Compare & Display
-            for (let index = 0; index < namesLI.length; index++) {
-                const name = namesLI[index].textContent.toLowerCase();
-
-                if (name.includes(searchQuery)) {
-                    namesLI[index].style.display = 'block';
-                } else {
-                    namesLI[index].style.display = 'none';
-                }
-            }
-        });
     </script>
     <!-- Main Body Ends -->
 </body>

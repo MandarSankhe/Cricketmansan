@@ -253,12 +253,12 @@ h1 {
 
 @media (max-width: 425px) {
     .header__search {
-/*        position:absolute;
+        position:absolute;
         top: 20px;
         right:37%;
         padding-right:150px;
-        width:10px !important;*/
-       display:none
+        width:6px !important;
+/*       display:none*/
     }
     .header__left a {
         width: 40%;
@@ -403,4 +403,13 @@ h1 {
     }
 .container h3 a:hover {
     color:white
+}
+
+
+
+.ui-autocomplete {
+    overflow-y: scroll;
+}.ui-autocomplete img {
+    width: 85px;
+    height: 47.5px;
 }

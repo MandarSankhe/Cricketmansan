@@ -27,7 +27,7 @@ menu.addEventListener('click', function () {
                 htmlEl.dataset.theme = "light";
                 localStorage.setItem('theme', 'lightTheme');
             } else {
-            $("body").addClass("dark");
+                $("body").addClass("dark");
                 $(".changetheme").text("Light Mode");
                 htmlEl.dataset.theme = "dark";
                 localStorage.setItem('theme', 'darkTheme');
