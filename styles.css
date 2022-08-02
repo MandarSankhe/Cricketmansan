@@ -89,7 +89,7 @@ body.dark .fa-angle-right {
 }
 .header__search {
     position: unset;
-    padding-right: 140px;
+/*    padding-right: 140px;*/
 }
 
 .header__search form {
@@ -385,12 +385,7 @@ h1 {
 
 @media (max-width: 425px) {
     .header__search {
-/*        position:absolute;*/
-/*        margin-top: 20px;*/
-/*        right:37%;*/
-/*        padding-right:150px;*/
-/*            width:6px !important;
-           display:none*/
+        width: 80px
     }
     .header__search input {
         width: 80px
