@@ -93,7 +93,7 @@ $("#searchInput").on("keydown", function () {
         },
         {
             label: "Cricket Fever",
-            icon: "resources/shows/cricketfever.jpg",
+            icon: "resources/shows/cricketfever.jpeg",
             link: "resources/shows/cricketfever.html",
             category: "Shows"
         },
@@ -302,8 +302,7 @@ $("#searchInput").on("keydown", function () {
         source: data,
         select: function (event, ui) {
             $('#searchInput').val(ui.item.label);
-            $('#searchInput').val(ui.item.img);
-            window.open(ui.item.link)
+            window.open("/" + ui.item.link, "_self")
             return false;
         },
 
