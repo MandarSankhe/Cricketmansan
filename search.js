@@ -1,5 +1,5 @@
 
-$('head').append('<link rel="stylesheet" type="text/css" href="/css/jquery-ui.css">');
+$('head').append('<link rel="stylesheet" type="text/css" href="/Cricketmansan/css/jquery-ui.css">');
 $('head').append('<style> .ui-autocomplete { max-height: 60%; overflow-y: auto; } </style>');
 
 
@@ -302,7 +302,7 @@ $("#searchInput").on("keydown", function () {
         source: data,
         select: function (event, ui) {
             $('#searchInput').val(ui.item.label);
-            window.open("/" + ui.item.link, "_self")
+            window.open("/Cricketmansan/" + ui.item.link, "_self")
             return false;
         },
 
@@ -315,7 +315,7 @@ $("#searchInput").on("keydown", function () {
 
 
         $img.attr({
-            src: "/" + item.icon,
+            src: "/Cricketmansan/" + item.icon,
             alt: item.label
         });
 
