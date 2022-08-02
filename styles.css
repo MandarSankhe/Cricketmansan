@@ -251,35 +251,24 @@ h1 {
     display: none
 }
 
-@media (max-width: 425px) {
-    .header__search {
-        position:absolute;
-        top: 20px;
-        right:37%;
-        padding-right:150px;
-        width:6px !important;
-/*       display:none*/
-    }
-    .header__left a {
-        width: 40%;
-        height: 40%
-    }
-    .header__icons .material-icons {
-        display: none;
+
+@media (max-width: 941px) {
+    .header__search input {
+        width: 300px;
     }
 
-  .header__icons .display-this {
-    display: inline;
-  }
+    .video {
+        text-align: left
+    }
 
-  .sidebar {
-    display: none;
-  }
+        .video:hover {
+            text-align: left
+        }
 }
 
 
 @media (max-width: 768px) {
-    .header__search {
+    .header__search input {
         width: 100px;
     }
 
@@ -319,18 +308,6 @@ h1 {
         }
 }
 
-@media (max-width: 941px) {
-  .header__search input {
-    width: 300px;
-  }
-
-  .video {
-      text-align: left  }
-    .video:hover {
-        text-align: left
-    }
-
-}
 
 
 .read-btn {
@@ -406,7 +383,36 @@ h1 {
 }
 
 
+@media (max-width: 425px) {
+    .header__search {
+/*        position:absolute;*/
+/*        margin-top: 20px;*/
+/*        right:37%;*/
+/*        padding-right:150px;*/
+/*            width:6px !important;
+           display:none*/
+    }
+    .header__search input {
+        width: 80px
+    }
 
+    .header__left a {
+        width: 40%;
+        height: 40%
+    }
+
+    .header__icons .material-icons {
+        display: none;
+    }
+
+    .header__icons .display-this {
+        display: inline;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
 .ui-autocomplete {
     overflow-y: scroll;
 }.ui-autocomplete img {
