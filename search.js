@@ -1,5 +1,5 @@
 
-$('head').append('<link rel="stylesheet" type="text/css" href="/Cricketmansan/css/jquery-ui.css">');
+$('head').append('<link rel="stylesheet" type="text/css" href="/css/jquery-ui.css">');
 $('head').append('<style> .ui-autocomplete { max-height: 60%; overflow-y: auto; } </style>');
 
 
@@ -294,34 +294,45 @@ $("#searchInput").on("keydown", function () {
             icon: "resources/movies/girlwithdragontatoo.jpg",
             link: "resources/movies/girlwithdragontatoo.html",
             category: "Movies"
+        },
+        {
+            label: "Mirage",
+            icon: "resources/movies/mirage.jpg",
+            link: "resources/movies/mirage.html",
+            category: "Movies"
         }
+
     ];
+
     $("#searchInput").autocomplete({
         max: 5,
         delay: 0,
         source: data,
         select: function (event, ui) {
-            $('#searchInput').val(ui.item.label);
-            window.open("/Cricketmansan/" + ui.item.link, "_self")
+            //$('#searchInput').val(ui.item.label);
+            window.open("/" + ui.item.link, "_self")
             return false;
         },
 
     });
 
+
     $("#searchInput").data("ui-autocomplete")._renderItem = function (ul, item) {
 
+    
         var $li = $('<li>'),
             $img = $('<img>');
+        var txt = String(item.label).replace(new RegExp(this.term, "gi"), "<b style=\"color: #C83069\">$&</b>");
 
 
         $img.attr({
-            src: "/Cricketmansan/" + item.icon,
+            src: "/" + item.icon,
             alt: item.label
         });
 
         $li.attr('data-value', item.label);
         $li.append('<a href="#">');
-        $li.find('a').append($img).append(item.label);
+        $li.find('a').append($img).append(txt);
 
         return $li.appendTo(ul);
     };
