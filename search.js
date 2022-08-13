@@ -1,5 +1,5 @@
 
-$('head').append('<link rel="stylesheet" type="text/css" href="/css/jquery-ui.css">');
+$('head').append('<link rel="stylesheet" type="text/css" href="/Cricketmansan/css/jquery-ui.css">');
 $('head').append('<style> .ui-autocomplete { max-height: 60%; overflow-y: auto; } </style>');
 
 
