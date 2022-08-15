@@ -234,12 +234,12 @@ transition: transform .3s ease-in-out;
   margin-bottom: 6px;
 }
 
-.title a,
+/*.title a,
 span {
   text-decoration: none;
   color: rgb(96, 96, 96);
   font-size: 14px;
-}
+}*/
 
 h1 {
   font-size: 20px;
