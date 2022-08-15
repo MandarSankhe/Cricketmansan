@@ -75,8 +75,8 @@ function js29(obj) {
     //d.dialog();
     $("#d29>#i29").attr("src", "https://drive.google.com/file/d/" + linkArr[index] + "/preview");
     $("#d29").dialog({
-        width: "auto",
-        height: "auto",
+        width: "350",
+        height: "280",
         title: titleArr[index],
         modal: true,
         buttons: {
