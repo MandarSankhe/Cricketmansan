@@ -1,7 +1,8 @@
 ﻿
 function js29(obj) {
     let index = obj.id;
-    let linkArr = ["1QD36otEQ38n9DJc6mQfLrEga66jA76t9",
+    let linkArr = [
+        "1QD36otEQ38n9DJc6mQfLrEga66jA76t9",
         "1eJiQXoLzLHY-BiJLITKpyqTBfyfC-0xY",
         "1Ci2IP-48rAIwxNx57417ImxFMhM-2mMC",
         "1EG-m3P1YornZxyyiST1q_hcXzDNBbQLv",
@@ -35,7 +36,8 @@ function js29(obj) {
         "",
 
     ];
-    let titleArr = ["Iron-Man (2008)",
+    let titleArr = [
+        "Iron-Man (2008)",
         "The Incredible Hulk (2008)",
         "Iron-Man 2 (2010)",
         "Thor (2011)",
@@ -68,10 +70,9 @@ function js29(obj) {
         "",
         "",
     ];
-    //$("#d29").attr("title", titleArr[index]);
-    //$('#d29').dialog('option', 'title', titleArr[index]);   
+
     var d = $('#d29').html('<iframe id="i29" allow="autoplay" allowfullscreen></iframe>');
-    d.dialog();
+    //d.dialog();
     $("#d29>#i29").attr("src", "https://drive.google.com/file/d/" + linkArr[index] + "/preview");
     $("#d29").dialog({
         width: "auto",
