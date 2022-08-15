@@ -92,10 +92,9 @@ function js29(obj) {
             duration: 200
         },
         hide: {
-            effect: "explode",
+            effect: "clip",
             duration: 200,
         },
-        
     });
 
 }
