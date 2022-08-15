@@ -106,7 +106,8 @@
 .ui-autocomplete {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 27% !important;
+	width: 60% !important;
 	cursor: default;
 }
 .ui-menu {
