@@ -69,6 +69,8 @@
                 iframe.src = 'https://drive.google.com/file/d/' + linkArr[i] + '/preview';
                 iframe.style.width = "257.48px";
                 iframe.style.height = "144.83";
+                iframe.allow = "autoplay";
+                iframe.allowFullScreen = true;
                 newDivVid.appendChild(iframe);
 
                 const h5 = document.createElement('h5');
