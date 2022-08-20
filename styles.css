@@ -297,6 +297,7 @@ h1 {
         bottom: 0;
         width: 100%;
         background-color:darkgrey;
+        z-index:1
     }
         .footer a {
             color:indianred
