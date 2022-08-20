@@ -5,13 +5,16 @@
     <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" itemrop="image" content="https://mandarsankhe.github.io/Cricketmansan/resources/shows/friends.jpg" />
+    <meta property="og:image:width" content="522" />
+    <meta property="og:image:height" content="349" />
 
     <!-- Material Icons -->
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- CSS File -->
     <link rel="stylesheet" href="../../../styles.css" />
-    <title>Friends - CricFlix</title>
+    <title>Friends Season 1 - CricFlix</title>
     <script src="../../../dark.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="../../../js/jquery.min.js"></script>
@@ -55,7 +58,7 @@
 
             ];
             for (i = 0; i < 24; i++) {
-                const p = i+1
+                const p = i + 1
                 const newdiv_ = document.createElement('div');
                 newdiv_.className = "col-sm-5 col-md-4 col-lg-4";
                 document.getElementById('divs').appendChild(newdiv_);
@@ -79,9 +82,9 @@
                 dlink.style.color = "inherit"
                 dlink.style.border = "2px solid #C83069"
                 dlink.style.borderRadius = "5px"
-                h5.appendChild(dlink); 
+                h5.appendChild(dlink);
 
-                const label = document.createTextNode("Click to download S1"+ " Ep" + p);
+                const label = document.createTextNode("Click to download S1" + " Ep" + p);
                 dlink.appendChild(label);
             }
         });
