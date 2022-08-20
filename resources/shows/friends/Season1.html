@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Material Icons -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../../../styles.css" />
+    <title>Friends - CricFlix</title>
+    <script src="../../../dark.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/main.min.js"></script>
+
+    <link href="../../../css/bootstrap.css" rel="stylesheet" />
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../css/bootstrap.theme.css" rel="stylesheet" />
+    <link href="../../../css/bootstrap.theme.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3797d89408.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let linkArr = [
+                "10kNAUxl0SEBnPKYWjeDtJUovP_Ob7tJz",
+                "1cvtzkxvXzu0TVuENAMVMcNMSWI0redaY",
+                "1-2EiHzG1OqDS9pp0O0kcNRxPZtlb-yjt",
+                "1e4wzNc9Ygvc3axYlFHFr0QQ-xi8yKVzh",
+                "1gvNztQWHTFwELLUFh0uCFioxJBBfvwuN",                             /*4*/
+                "1bHBCRTyj3JZNTfzXKbRJw72bN6JTe_Uh",
+                "1N-5J6rfR9sdpZWpvQMDPN2BWrqiz4JcY",                             /*6*/
+                "18IijjMBTH3ZDk9Zs9JX-CxMXdYLeu-f8",
+                "1MCxKBNqL-lPXZn79NNp99Y2LJ98jILp4",                            /*8*/
+                "1GdVYw1Kd1F4qIkHSsA6eMno3s-4_A8t1",
+                "1wt0vQ2mD-uSZS0Mc0fxwTRxHdUgAzguy",                           /*10*/
+                "17_vKkt62xKn5B3uVT1veuYGJopSUrYbZ",                          /*11*/
+                "1YVGYFr-hezdOoGBP7l80PE_iOmYsOOoz",
+                "1uxDdxSlWCV9EDs-alKg9LAM2gg0jDw53",                         /*13*/
+                "1fTCbRwrrLFZQzJxxv7vrK7FAWTPJcyZq",
+                "10rtGPDWjrPbw8521Jmx46QpNKqkBwDVM",                        /*15*/
+                "1eSGesHYUaL88nE7qduaXsoOtuWylk26w",                        /*16*/
+                "18N5GsSLoFvt0T0VEi1ndcCuLFn-5XY7o",                       /*17*/
+                "1MphYyl2qeN_IEIsKQ9bXAqicmhE53s7n",                      /*18*/
+                "1SKN-7a1YSi274mZfciXr-7ZnsZB_cFMk",                     /*19*/
+                "1DOAPNcxPrZmjaVR0jRDEJv_RrYtkhJr7",
+                "1vsQyOaRRpIuagJ7O1VaETjC31pvegHmN",                     /*21*/
+                "1kNOhhLOmCsuZYyhCri5ViTETE9tzgo41",                     /*22*/
+                "116Nseoj01nNwP0Tb9175TduJ7Vz6xteO",                     /*23*/
+
+
+            ];
+            for (i = 0; i < 24; i++) {
+                const p = i+1
+                const newdiv_ = document.createElement('div');
+                newdiv_.className = "col-sm-5 col-md-4 col-lg-4";
+                document.getElementById('divs').appendChild(newdiv_);
+
+                const newDivVid = document.createElement("div");
+                newDivVid.className = "video";
+                newdiv_.appendChild(newDivVid);
+
+                const iframe = document.createElement('iframe');
+                iframe.src = 'https://drive.google.com/file/d/' + linkArr[i] + '/preview';
+                iframe.style.width = "257.48px";
+                iframe.style.height = "144.83";
+                newDivVid.appendChild(iframe);
+
+                const h5 = document.createElement('h5');
+                newDivVid.appendChild(h5);
+
+                const dlink = document.createElement('a');
+                dlink.href = "https://drive.google.com/uc?id=" + linkArr[i] + "&export=download"
+                dlink.target = "_blank"
+                dlink.style.color = "inherit"
+                dlink.style.border = "2px solid #C83069"
+                dlink.style.borderRadius = "5px"
+                h5.appendChild(dlink); 
+
+                const label = document.createTextNode("Click to download S1"+ " Ep" + p);
+                dlink.appendChild(label);
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <!-- Header Starts -->
+    <div class="header">
+
+        <div class="header__left">
+            <i id="menu" class="material-icons">menu</i>
+            <a href="../../../index.html">
+                <img src="../../logo.png"
+                     alt="logo" />
+            </a>
+        </div>
+        <div class="header__search">
+                        <form id="search-vid">
+                                <label for="searchInput"></label>
+                <input type="text" id="searchInput" name="searchInput" placeholder="Search" />
+            </form>
+        </div>
+        <button id="switch" class="btn changetheme" data-type="dark" style="background-color:lightpink; color:black">Dark mode</button>
+
+    </div>
+    <!-- Header Ends -->
+    <!-- Main Body Starts -->
+    <div class="mainBody">
+        <!-- Sidebar Starts -->
+        <div class="sidebar">
+            <div class="sidebar__categories">
+                <a href="../../../index.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fas fa-home fa-2x"></i>
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a href="../../../ytvideos.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fab fa-youtube fa-2x"></i>
+                        <span>Dev`s YT Videos</span>
+                    </div>
+                </a>
+                <a href="../../../shows.html" class="active" style="text-decoration: none">
+                    <div class="sidebar__category" style="color:red">
+                        <i class="fas fa-tv fa-2x"></i>
+                        <span>Shows</span>
+                    </div>
+                </a>
+                <a href="../../../movies.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fas fa-film fa-2x"></i>
+                        <span>Movies</span>
+                    </div>
+                </a>
+                <a href="../../../Cricket.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fas fa-baseball-ball fa-2x"></i>
+                        <span>Cricket</span>
+                    </div>
+                </a>
+            </div>
+            <hr />
+            <div class="sidebar__categories">
+                <div class="sidebar__category">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Library</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">history</i>
+                    <span>History</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">play_arrow</i>
+                    <span>Your Videos</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">watch_later</i>
+                    <span>Watch Later</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Liked Videos</span>
+                </div>
+            </div>
+            <hr />
+        </div>
+        <!-- Sidebar Ends -->
+        <!-- Videos Section -->
+        <div class="videos">
+            <a href="../lockandkey.html"><button class="btn primary" style="background-color:#C83069; color:white">Back</button></a>
+            <h3>Friends</h3>
+            <div class="container">
+                <h4>Season 1</h4>
+                <div id="divs" class="row">
+                </div>
+
+
+            </div>
+            <div class="footer" id="myFooter">
+                <a href="../../../index.html" style="text-decoration: none">
+                    <div class="col-sm-2">
+                        <i class="fas fa-home fa-2x"></i>
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a href="../../../ytvideos.html" style="text-decoration: none">
+                    <div class="col-sm-2">
+                        <i class="fab fa-youtube fa-2x"></i>
+                        <span>My_YT</span>
+                    </div>
+                </a>
+                <a href="../../../shows.html" class="active" style="text-decoration: none">
+                    <div class="col-sm-2" style="color:red">
+                        <i class="fas fa-tv fa-2x"></i>
+                        <span>Shows</span>
+                    </div>
+                </a>
+                <a href="../../../movies.html" style="text-decoration: none">
+                    <div class="col-sm-2">
+                        <i class="fas fa-film fa-2x"></i>
+                        <span>Movies</span>
+                    </div>
+                </a>
+                <a href="../../../Cricket.html" style="text-decoration: none">
+                    <div class="col-sm-2">
+                        <i class="fas fa-baseball-ball fa-2x"></i>
+                        <span>Cricket</span>
+                    </div>
+                </a>
+            </div>
+            <script src="../../../index.js"></script>
+            <script src="../../../search.js"></script>
+            <!-- Main Body Ends -->
+</body>
+</html>
