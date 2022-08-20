@@ -32,6 +32,12 @@ $("#searchInput").on("keydown", function () {
             category: "Shows"
         },
         {
+            label: "Friends",
+            icon: "resources/shows/friends.jpg",
+            link: "resources/shows/friends.html",
+            category: "Shows"
+        },
+        {
             label: "Lost in Space",
             icon: "resources/shows/lostinspace.jpg",
             link: "resources/shows/lostinspace.html",
