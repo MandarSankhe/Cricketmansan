@@ -268,6 +268,12 @@ h1 {
 
 
 @media (max-width: 768px) {
+    .ytp-big-mode {
+        -webkit-transform: rotate(-90deg) !important;
+        -webkit-transform-origin: 50% 50% !important;
+        transform: rotate(-90deg) !important;
+        transform-origin: 50% 50% !important;
+    }
     .header__search input {
         width: 100px;
     }
