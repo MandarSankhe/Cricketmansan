@@ -56,6 +56,12 @@ $("#searchInput").on("keydown", function () {
             category: "Shows"
         },
         {
+            label: "Prison Break",
+            icon: "resources/shows/vikings.jpg",
+            link: "resources/shows/vikings.html",
+            category: "Shows"
+        },
+        {
             label: "Mr. Robot",
             icon: "resources/shows/mrrobot.jpg",
             link: "resources/shows/mrrobot.html",
