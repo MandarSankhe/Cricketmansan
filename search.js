@@ -50,15 +50,15 @@ $("#searchInput").on("keydown", function () {
             category: "Shows"
         },
         {
-            label: "Squid Game",
-            icon: "resources/shows/squidgame.jpg",
-            link: "resources/shows/squidgame.html",
+            label: "Vikings",
+            icon: "resources/shows/vikings.jpg",
+            link: "resources/shows/vikings.html",
             category: "Shows"
         },
         {
-            label: "Prison Break",
-            icon: "resources/shows/vikings.jpg",
-            link: "resources/shows/vikings.html",
+            label: "Squid Game",
+            icon: "resources/shows/squidgame.jpg",
+            link: "resources/shows/squidgame.html",
             category: "Shows"
         },
         {
