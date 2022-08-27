@@ -50,6 +50,12 @@ $("#searchInput").on("keydown", function () {
             category: "Shows"
         },
         {
+            label: "Peaky Blinders",
+            icon: "resources/shows/peakyblinders.jpg",
+            link: "resources/shows/peakyblinders.html",
+            category: "Shows"
+        },
+        {
             label: "Vikings",
             icon: "resources/shows/vikings.jpg",
             link: "resources/shows/vikings.html",
