@@ -24,6 +24,14 @@
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
     <script src="https://kit.fontawesome.com/3797d89408.js" crossorigin="anonymous"></script>
     <style>
+        h3 u {
+            text-decoration-color: #C83069;
+        }
+        .headerhome{
+            display:inline;
+            padding-bottom: 2px;
+            padding-top: 2px;
+        }
         /* The heart of the matter */
         /* width */
         .row::-webkit-scrollbar {
@@ -55,6 +63,8 @@
 
         .horizontal-scrollable {
             position: relative !important;
+            padding-top: 25px;
+            padding-bottom: 10px
         }
 
         .carousel-controls .control {
@@ -194,7 +204,7 @@
         @media (max-width: 427px) {
             .video {
                 width: 86px;
-                height: 105px;
+                height: 123px;
                 white-space: initial;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -303,10 +313,9 @@
         <hr />
         <div class="videos">
             <div class="container">
-                <h3>
-                    Popular Shows
-                    <a href="shows.html"><button type="button" class="btn btn-danger btn-sm read-btn">Jump to  Shows<i class="fas fa-chevron-right"></i></button></a>
-                </h3>
+                <h3 class="headerhome"><u>Popular Shows</u></h3>
+                <a class="headerhome" href="shows.html"><button type="button" class="btn btn-danger btn-sm read-btn">Jump to  Shows<i class="fas fa-chevron-right"></i></button></a>
+
                 <div class="container horizontal-scrollable">
 
                     <div id="row1" class="row" style="overflow-x: scroll; width:85%; float:left; scroll-behavior: smooth">
@@ -485,10 +494,8 @@
                         <div id="slideRight" class="control next"><i class="fa fa-angle-right fa-3x">&nbsp;</i></div>
                     </div>
                 </div>
-                <h3>
-                    Popular Movies
-                    <a href="movies.html"><button type="button" class="btn btn-danger btn-sm read-btn">Jump to  Movies<i class="fas fa-chevron-right"></i></button></a>
-                </h3>
+                <h3 class="headerhome"><u>Popular Movies</u></h3>
+                <a class="headerhome" href="movies.html"><button type="button" class="btn btn-danger btn-sm read-btn">Jump to  Movies<i class="fas fa-chevron-right"></i></button></a>
                 <div class="container horizontal-scrollable">
                     <div id="row2" class="row" style="overflow-x: scroll; width:85%; float:left; scroll-behavior: smooth">
                         <div class="col-xs-4">
