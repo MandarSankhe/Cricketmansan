@@ -98,6 +98,12 @@ $("#searchInput").on("keydown", function () {
             category: "Shows"
         },
         {
+            label: "Manifest",
+            icon: "resources/shows/manifest.jpg",
+            link: "resources/shows/manifest.html",
+            category: "Shows"
+        },
+        {
             label: "Sense8",
             icon: "resources/shows/sense8.jpg",
             link: "resources/shows/sense8.html",
