@@ -62,6 +62,12 @@ $("#searchInput").on("keydown", function () {
             category: "Shows"
         },
         {
+            label: "Elite",
+            icon: "resources/shows/elite.jpg",
+            link: "resources/shows/elite.html",
+            category: "Shows"
+        },
+        {
             label: "Squid Game",
             icon: "resources/shows/squidgame.jpg",
             link: "resources/shows/squidgame.html",
