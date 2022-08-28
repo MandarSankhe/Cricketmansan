@@ -361,3 +361,5 @@ $("#searchInput").on("keydown", function () {
         return $li.appendTo(ul);
     };
 });
+
+document.getElementsByClassName("sidebar__categories")[1].style.display = "none";
