@@ -81,7 +81,7 @@ function js29(obj) {
         modal: true,
         buttons: {
             "Download": function () {
-                window.open("https://drive.google.com/uc?id=" + linkArr[index] + "&export=download", '_blank');
+                window.open("https://drive.google.com/uc?id=" + linkArr[index] + "&export=download&confirm=t", '_blank');
             },
             Cancel: function () {
                 clear();
