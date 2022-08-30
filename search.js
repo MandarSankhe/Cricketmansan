@@ -330,6 +330,18 @@ $("#searchInput").on("keydown", function () {
             icon: "resources/movies/mirage.jpg",
             link: "resources/movies/mirage.html",
             category: "Movies"
+        },
+        {
+            label: "The Last Samurai",
+            icon: "resources/movies/lastsamurai.jpg",
+            link: "resources/movies/lastsamurai.html",
+            category: "Movies"
+        },
+        {
+            label: "The Master",
+            icon: "resources/movies/themaster.jpg",
+            link: "resources/movies/themaster.html",
+            category: "Movies"
         }
 
     ];
