@@ -71,16 +71,15 @@
                 iframe.src = 'https://drive.google.com/file/d/' + linkArr[i] + '/preview';
                 iframe.style.width = "257.48px";
                 iframe.style.height = "144.83";
-                iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen";
-                //iframe.setAttribute('allowFullScreen', '');
-
+                iframe.allow = "autoplay";
+                iframe.setAttribute('allowFullScreen', '');
                 newDivVid.appendChild(iframe);
 
                 const h5 = document.createElement('h5');
                 newDivVid.appendChild(h5);
 
                 const dlink = document.createElement('a');
-                dlink.href = "https://drive.google.com/uc?id=" + linkArr[i] + "&export=download"
+                dlink.href = "https://drive.google.com/uc?id=" + linkArr[i] + "&export=download&confirm=t"
                 dlink.target = "_blank"
                 dlink.style.color = "inherit"
                 dlink.style.border = "2px solid #C83069"
