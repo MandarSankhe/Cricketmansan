@@ -1,8 +1,8 @@
 ﻿function download(objid, link) {
-    link.href = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+    link.href = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t&uuid=aab20bdc-a2e5-4c72-9aaa-47878f6abcd2";
 }
 function downloadmcu(objid) {
-    var temp = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+    var temp = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t&uuid=aab20bdc-a2e5-4c72-9aaa-47878f6abcd2";
     return temp;
 }
 
