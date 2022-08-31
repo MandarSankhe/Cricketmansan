@@ -82,9 +82,7 @@ function js29(obj) {
         title: titleArr[index],
         modal: true,
         buttons: {
-            "Download": function () {
-                window.open("https://drive.google.com/uc?id=" + linkArr[index] + "&export=download&confirm=t", '_blank');
-            },
+            "Download": download(linkArr[i], dlink),
             Cancel: function () {
                 clear();
                 $(this).dialog("close");
