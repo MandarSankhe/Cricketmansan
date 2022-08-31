@@ -1,6 +1,11 @@
 ﻿function download(objid, link) {
     link.href = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
 }
+function downloadmcu(objid) {
+    var temp = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+    return temp;
+}
+
 function js29(obj) {
     let index = obj.id;
     let linkArr = [
@@ -82,7 +87,9 @@ function js29(obj) {
         title: titleArr[index],
         modal: true,
         buttons: {
-            "Download": download(linkArr[index], dlink),
+            "Download": function () {
+                window.open(downloadmcu(linkArr[index]), '_blank');
+            },
             Cancel: function () {
                 clear();
                 $(this).dialog("close");
