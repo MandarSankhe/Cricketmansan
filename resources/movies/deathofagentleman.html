@@ -28,6 +28,29 @@
     <link href="../../css/bootstrap.theme.css" rel="stylesheet" />
     <link href="../../css/bootstrap.theme.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/3797d89408.js" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function () {
+            var numItems = $('.video').length
+            for (i = 0; i < numItems; i++) {
+                var url = document.getElementsByTagName("iframe")[i].src.split("/")[5];
+                var label = document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].innerHTML;
+                document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].innerHTML = "";
+                document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].style.border = "2px solid #C83069"
+                document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].style.borderRadius = "5px"
+
+                const dlink = document.createElement('a');
+                dlink.addEventListener('click', download(url, dlink), false);
+                dlink.target = "_system"
+                dlink.style.color = "inherit"
+
+                const label1 = document.createTextNode("Click to download " + label);
+                dlink.appendChild(label1);
+
+                document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].appendChild(dlink);
+            }
+        });
+    </script>
 </head>
 <body>
     <!-- Header Starts -->
@@ -41,8 +64,8 @@
             </a>
         </div>
         <div class="header__search">
-                        <form id="search-vid">
-                                <label for="searchInput"></label>
+            <form id="search-vid">
+                <label for="searchInput"></label>
                 <input type="text" id="searchInput" name="searchInput" placeholder="Search" />
             </form>
         </div>
@@ -157,7 +180,8 @@
                 </div>
             </a>
         </div>
-        <script src="../../index.js"></script><script src = "../../search.js"></script> 
+        <script src="../../index.js"></script>
+        <script src="../../search.js"></script>
         <!-- Main Body Ends -->
 </body>
 </html>
