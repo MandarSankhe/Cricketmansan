@@ -1,8 +1,8 @@
 ﻿function download(objid, link) {
-    link.href = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t&uuid=aab20bdc-a2e5-4c72-9aaa-47878f6abcd2";
+    link.href = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
 }
 function downloadmcu(objid) {
-    var temp = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t&uuid=aab20bdc-a2e5-4c72-9aaa-47878f6abcd2";
+    var temp = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
     return temp;
 }
 
@@ -88,7 +88,7 @@ function js29(obj) {
         modal: true,
         buttons: {
             "Download": function () {
-                window.open(downloadmcu(linkArr[index]), '_blank');
+                window.open(downloadmcu(linkArr[index]), '_system');
             },
             Cancel: function () {
                 clear();
