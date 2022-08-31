@@ -25,6 +25,47 @@
     <link href="../../css/bootstrap.theme.css" rel="stylesheet" />
     <link href="../../css/bootstrap.theme.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/3797d89408.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let linkArr = [
+                "1kRzYeV8BCGUgsXX-yJO558HeWNRZ67A2",
+
+            ];
+            for (i = 0; i < linkArr.length; i++) {
+                const newdiv_ = document.createElement('div');
+                newdiv_.className = "col-sm-5 col-md-4 col-lg-4";
+                document.getElementById('divs').appendChild(newdiv_);
+
+                const newDivVid = document.createElement("div");
+                newDivVid.className = "video";
+                newdiv_.appendChild(newDivVid);
+
+                const iframe = document.createElement('iframe');
+                iframe.src = 'https://drive.google.com/file/d/' + linkArr[i] + '/preview';
+                iframe.style.width = "257.48px";
+                iframe.style.height = "144.83";
+                iframe.allow = "autoplay";
+                iframe.setAttribute('allowFullScreen', '');
+                newDivVid.appendChild(iframe);
+
+                const h5 = document.createElement('h5');
+                newDivVid.appendChild(h5);
+
+                const dlink = document.createElement('a');
+                dlink.addEventListener('click', download(linkArr[i], dlink), false);
+                dlink.target = "_blank"
+                dlink.style.color = "inherit"
+                dlink.style.border = "2px solid #C83069"
+                dlink.style.borderRadius = "5px"
+                h5.appendChild(dlink);
+
+                const label = document.createTextNode("Click to download");
+                dlink.appendChild(label);
+            }
+        });
+    </script>
+
 </head>
 <body>
     <!-- Header Starts -->
@@ -113,15 +154,7 @@
         <div class="videos">
             <h3>The Master(2012)</h3>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-5 col-md-4 col-lg-4">
-                        <div class="video">
-                            <iframe src="https://drive.google.com/file/d/1kRzYeV8BCGUgsXX-yJO558HeWNRZ67A2/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
-                            <h5>
-                            <a href="https://drive.google.com/u/3/uc?id=1kRzYeV8BCGUgsXX-yJO558HeWNRZ67A2&export=download&confirm=t" target="_blank" style="color: inherit; border: 2px solid rgb(200, 48, 105); border-radius: 5px;">Click to download</a>
-                            </h5>
-                        </div>
-                    </div>
+                <div id="divs" class="row">
                 </div>
             </div>
         </div>
