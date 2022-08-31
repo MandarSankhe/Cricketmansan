@@ -31,13 +31,13 @@
                 var url = document.getElementsByTagName("iframe")[i].src.split("/")[5];
                 var label = document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].innerHTML;
                 document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].innerHTML = "";
+                document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].style.border = "2px solid #C83069"
+                document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].style.borderRadius = "5px"
 
                 const dlink = document.createElement('a');
                 dlink.addEventListener('click', download(url, dlink), false);
                 dlink.target = "_system"
                 dlink.style.color = "inherit"
-                dlink.style.border = "2px solid #C83069"
-                dlink.style.borderRadius = "5px"
 
                 const label1 = document.createTextNode("Click to download " + label);
                 dlink.appendChild(label1);
