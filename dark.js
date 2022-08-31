@@ -1,4 +1,6 @@
-﻿
+﻿function download(objid, link) {
+    link.href = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+}
 function js29(obj) {
     let index = obj.id;
     let linkArr = [
