@@ -82,7 +82,7 @@ function js29(obj) {
         title: titleArr[index],
         modal: true,
         buttons: {
-            "Download": download(linkArr[i], dlink),
+            "Download": download(linkArr[index], dlink),
             Cancel: function () {
                 clear();
                 $(this).dialog("close");
