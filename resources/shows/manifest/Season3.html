@@ -66,7 +66,10 @@
                 newDivVid.appendChild(h5);
 
                 const dlink = document.createElement('a');
-                dlink.href = "https://drive.google.com/uc?id=" + linkArr[i] + "&export=download&confirm=t"
+                //dlink.href = "https://drive.google.com/uc?id=" + linkArr[i] + "&export=download&confirm=t"
+                dlink.addEventListener('click', function (ev) {
+                    dlink.href = "https://drive.google.com/uc?id=" + linkArr[i] + "&export=download&confirm=t";
+                }, false);
                 dlink.target = "_blank"
                 dlink.style.color = "inherit"
                 dlink.style.border = "2px solid #C83069"
