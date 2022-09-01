@@ -26,6 +26,12 @@ $("#searchInput").on("keydown", function () {
             category: "Shows"
         },
         {
+            label: "House of the Dragon",
+            icon: "resources/shows/houseofdragon.jpg",
+            link: "resources/shows/houseofdragon.html",
+            category: "Shows"
+        },
+        {
             label: "The Big Bang Theory",
             icon: "resources/shows/bigbangtheory.jpg",
             link: "resources/shows/bigbangtheory.html",
