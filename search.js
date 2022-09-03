@@ -80,6 +80,12 @@ $("#searchInput").on("keydown", function () {
             category: "Shows"
         },
         {
+            label: "All of Us Are Dead",
+            icon: "resources/shows/allofusaredead.jpg",
+            link: "resources/shows/allofusaredead.html",
+            category: "Shows"
+        },
+        {
             label: "Mr. Robot",
             icon: "resources/shows/mrrobot.jpg",
             link: "resources/shows/mrrobot.html",
