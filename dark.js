@@ -1,8 +1,10 @@
-﻿function download(objid, link) {
-    link.href = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+function download(objid, link) {
+    //link.href = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+    link.href = "https://www.googleapis.com/drive/v3/files/" + objid + "?key=AIzaSyCTQEw6SENyoTRKPMi2OGmz0pn-0TpD8MQ&alt=media";
 }
 function downloadmcu(objid) {
-    var temp = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+    //var temp = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+    var temp = "https://www.googleapis.com/drive/v3/files/" + objid + "?key=AIzaSyCTQEw6SENyoTRKPMi2OGmz0pn-0TpD8MQ&alt=media";
     return temp;
 }
 
