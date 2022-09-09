@@ -32,6 +32,12 @@ $("#searchInput").on("keydown", function () {
             category: "Shows"
         },
         {
+            label: "Modern Family",
+            icon: "resources/shows/modernfamily.jpg",
+            link: "resources/shows/modernfamily.html",
+            category: "Shows"
+        },
+        {
             label: "The Big Bang Theory",
             icon: "resources/shows/bigbangtheory.jpg",
             link: "resources/shows/bigbangtheory.html",
