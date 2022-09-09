@@ -1,10 +1,13 @@
 function download(objid, link) {
-    link.href = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+    //link.href = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+    link.href = "https://docs.google.com/uc?export=download&confirm=no_antivirus&id=" + objid;
 }
 function downloadmcu(objid) {
-    var temp = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+    //var temp = "https://drive.google.com/uc?id=" + objid + "&export=download&confirm=t";
+    var temp = "https://docs.google.com/uc?export=download&confirm=no_antivirus&id=" + objid;
     return temp;
 }
+
 
 function js29(obj) {
     let index = obj.id;
