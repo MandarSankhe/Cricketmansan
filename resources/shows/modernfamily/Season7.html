@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" itemrop="image" content="https://mandarsankhe.github.io/Cricketmansan/resources/shows/modernfamily.jpg" />
+    <meta property="og:image:width" content="520" />
+    <meta property="og:image:height" content="292" />
+
+    <!-- Material Icons -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../../../styles.css" />
+    <title>Modern Family Season 7 - CricFlix</title>
+    <script src="../../../dark.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/main.min.js"></script>
+
+    <link href="../../../css/bootstrap.css" rel="stylesheet" />
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../css/bootstrap.theme.css" rel="stylesheet" />
+    <link href="../../../css/bootstrap.theme.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3797d89408.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let linkArr = [
+                "1-jZXiuBnqKbdLWwqoCLUgZwA4MN6Fh9C",
+                "1XoJ1YZPUSZfLqCd0l0Uu-qPaxr9601HD",
+                "1iOxebOjV61giZok-owX2566ZkI4SRCN9",
+                "1Kev2d1Zpum8uiV6NTTCUVuF68zd6VaXx",
+                "1YIBYTvIxcFdgz84BSGTECuOR1fDeZjtO",                             /*4*/
+                "1TGbKWFldpJ6RD0mnhDM1w0SC-zk1hzcC",
+                "1fvW_7o5AbYyrIFrK_Fn4TdMkhjP9DN8C",                             /*6*/
+                "1VWPEfcjTZ88W7ohYgpkz5j0ghbdCLjcH",
+                "1Nd7Wx_Z60kF_r28Gb8ymVYiueLauiFpR",                            /*8*/
+                "1tKLhGkpz8Zdno5HsKjpGbAyCsGdWM1mm",
+                "13_ztRWwxwmDPiH8vuFLOl8r2fEWPpG3H",                           /*10*/
+                "1srW3fbR6N5LegwGM3mX_Ht9Ili1a0kBa",                          /*11*/
+                "1-BlYfT0WPUFgZnRpReSTXDk3ox-Wfyv3",
+                "11E9gZ38wo1fLZTZWXGa4xSQthuklTzU4",                         /*13*/
+                "17RB3ASdxOetgp41O9URBUUp2qJHtEPpO",
+                "1HukvA8jZRUuw4ruu3P-W5xIX7hW23YJ2",                        /*15*/
+                "1MLtdDE_HmXE9pPNC0jr-IlU6bJKu5GSH",                        /*16*/
+                "1-NN_yR_B8ugouPbssq2N_adfksf-PfAu",                       /*17*/
+                "1RwfIlzry4DBI5BDmwzwac4Z2gTuIXUfm",                      /*18*/
+                "1A3zxh6jJMqJtkSTlkGZOSj7X9iiTwcFs",                     /*19*/
+                "1urujn0ytsLszRXRl1JRbJ4cM4pmkUyhT",
+                "1dfD5Ic1lO1jYhyxROz7LaBiEYAy6to5r",                     /*21*/
+
+
+            ];
+            for (i = 0; i < 24; i++) {
+                const p = i + 1
+                const newdiv_ = document.createElement('div');
+                newdiv_.className = "col-sm-5 col-md-4 col-lg-4";
+                document.getElementById('divs').appendChild(newdiv_);
+
+                const newDivVid = document.createElement("div");
+                newDivVid.className = "video";
+                newdiv_.appendChild(newDivVid);
+
+                const iframe = document.createElement('iframe');
+                iframe.src = 'https://drive.google.com/file/d/' + linkArr[i] + '/preview';
+                iframe.style.width = "257.48px";
+                iframe.style.height = "144.83";
+                iframe.allow = "autoplay";
+                iframe.setAttribute('allowFullScreen', '');
+                newDivVid.appendChild(iframe);
+
+                const h5 = document.createElement('h5');
+                newDivVid.appendChild(h5);
+
+                const dlink = document.createElement('a');
+                dlink.addEventListener('click', download(linkArr[i], dlink), false);
+                dlink.target = "_blank"
+                dlink.style.color = "inherit"
+                dlink.style.border = "2px solid #C83069"
+                dlink.style.borderRadius = "5px"
+                h5.appendChild(dlink);
+
+                const label = document.createTextNode("Click to download S7" + " Ep" + p);
+                dlink.appendChild(label);
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <!-- Header Starts -->
+    <div class="header">
+
+        <div class="header__left">
+            <i id="menu" class="material-icons">menu</i>
+            <a href="../../../index.html">
+                <img src="../../logo.png"
+                     alt="logo" />
+            </a>
+        </div>
+        <div class="header__search">
+            <form id="search-vid">
+                <label for="searchInput"></label>
+                <input type="text" id="searchInput" name="searchInput" placeholder="Search" />
+            </form>
+        </div>
+        <button id="switch" class="btn changetheme" data-type="dark" style="background-color:lightpink; color:black">Dark mode</button>
+
+    </div>
+    <!-- Header Ends -->
+    <!-- Main Body Starts -->
+    <div class="mainBody">
+        <!-- Sidebar Starts -->
+        <div class="sidebar">
+            <div class="sidebar__categories">
+                <a href="../../../index.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fas fa-home fa-2x"></i>
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a href="../../../ytvideos.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fab fa-youtube fa-2x"></i>
+                        <span>Dev`s YT Videos</span>
+                    </div>
+                </a>
+                <a href="../../../shows.html" class="active" style="text-decoration: none">
+                    <div class="sidebar__category" style="color:red">
+                        <i class="fas fa-tv fa-2x"></i>
+                        <span>Shows</span>
+                    </div>
+                </a>
+                <a href="../../../movies.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fas fa-film fa-2x"></i>
+                        <span>Movies</span>
+                    </div>
+                </a>
+                <a href="../../../Cricket.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fas fa-baseball-ball fa-2x"></i>
+                        <span>Cricket</span>
+                    </div>
+                </a>
+            </div>
+            <hr />
+            <div class="sidebar__categories">
+                <div class="sidebar__category">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Library</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">history</i>
+                    <span>History</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">play_arrow</i>
+                    <span>Your Videos</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">watch_later</i>
+                    <span>Watch Later</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Liked Videos</span>
+                </div>
+            </div>
+            <hr />
+        </div>
+        <!-- Sidebar Ends -->
+        <!-- Videos Section -->
+        <div class="videos">
+            <a href="../modernfamily.html"><button class="btn primary" style="background-color:#C83069; color:white">Back</button></a>
+            <h3>Modern Family</h3>
+            <div class="container">
+                <h4>Season 7</h4>
+                <div id="divs" class="row">
+                </div>
+            </div>
+            <div class="footer" id="myFooter">
+                <a href="../../../index.html" style="text-decoration: none">
+                    <div class="col-sm-2">
+                        <i class="fas fa-home fa-2x"></i>
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a href="../../../ytvideos.html" style="text-decoration: none">
+                    <div class="col-sm-2">
+                        <i class="fab fa-youtube fa-2x"></i>
+                        <span>My_YT</span>
+                    </div>
+                </a>
+                <a href="../../../shows.html" class="active" style="text-decoration: none">
+                    <div class="col-sm-2" style="color:red">
+                        <i class="fas fa-tv fa-2x"></i>
+                        <span>Shows</span>
+                    </div>
+                </a>
+                <a href="../../../movies.html" style="text-decoration: none">
+                    <div class="col-sm-2">
+                        <i class="fas fa-film fa-2x"></i>
+                        <span>Movies</span>
+                    </div>
+                </a>
+                <a href="../../../Cricket.html" style="text-decoration: none">
+                    <div class="col-sm-2">
+                        <i class="fas fa-baseball-ball fa-2x"></i>
+                        <span>Cricket</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="../../../index.js"></script>
+    <script src="../../../search.js"></script>
+    <!-- Main Body Ends -->
+</body>
+</html>
