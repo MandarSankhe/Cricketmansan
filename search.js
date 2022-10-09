@@ -360,6 +360,12 @@ $("#searchInput").on("keydown", function () {
             icon: "resources/movies/themaster.jpg",
             link: "resources/movies/themaster.html",
             category: "Movies"
+        },
+        {
+            label: "Death On The Nile",
+            icon: "resources/movies/deathonthenile.jpg",
+            link: "resources/movies/deathonthenile.html",
+            category: "Movies"
         }
 
     ];
