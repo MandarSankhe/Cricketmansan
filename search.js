@@ -169,6 +169,12 @@ $("#searchInput").on("keydown", function () {
             link: "resources/shows/bettercallsaul.html",
             category: "Shows"
         },
+        {
+            label: "Haunting of the Hill House",
+            icon: "resources/shows/hauntingofthehillhouse.jpg",
+            link: "resources/shows/hauntingofthehillhouse.html",
+            category: "Shows"
+        },
 
 
 
