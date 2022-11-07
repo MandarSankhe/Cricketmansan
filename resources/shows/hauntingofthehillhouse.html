@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="resources/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" itemrop="image" content="https://mandarsankhe.github.io/Cricketmansan/resources/shows/hauntingofthehillhouse.jpg" />
+    <meta property="og:image:width" content="550" />
+    <meta property="og:image:height" content="309" />
+
+    <!-- Material Icons -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>Haunting of the Hill House - CricFlix</title>
+    <script src="../../dark.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/main.min.js"></script>
+
+    <link href="../../css/bootstrap.css" rel="stylesheet" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../css/bootstrap.theme.css" rel="stylesheet" />
+    <link href="../../css/bootstrap.theme.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3797d89408.js" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function () {
+            var numItems = $('.video').length
+            for (i = 0; i < numItems; i++) {
+                var url = document.getElementsByTagName("iframe")[i].src.split("/")[5];
+                var label = document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].innerHTML;
+                document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].innerHTML = "";
+
+                const dlink = document.createElement('a');
+                dlink.addEventListener('click', download(url, dlink), false);
+                dlink.target = "_system"
+                dlink.style.color = "inherit"
+                dlink.style.border = "2px solid #C83069"
+                dlink.style.borderRadius = "5px"
+
+                const label1 = document.createTextNode("Click to download " + label);
+                dlink.appendChild(label1);
+
+                document.getElementsByClassName("video")[i].getElementsByTagName("h5")[0].appendChild(dlink);
+            }
+        });
+
+        function ShowEN(obj) {
+            if (obj == 'en') {
+                document.getElementById("en").style.display = 'block';
+                document.getElementById("hi").style.display = 'none';
+            }
+            else {
+                document.getElementById("en").style.display = 'none';
+                document.getElementById("hi").style.display = 'block';
+            }
+            document.getElementById("switchaud").style.display = 'none';           
+            document.getElementById("backbtn").style.display = 'block';           
+        }
+    </script>
+</head>
+<body>
+    <!-- Header Starts -->
+    <div class="header">
+
+        <div class="header__left">
+            <i id="menu" class="material-icons">menu</i>
+            <a href="../../index.html">
+                <img src="../logo.png"
+                     alt="logo" />
+            </a>
+        </div>
+        <div class="header__search">
+            <form id="search-vid">
+                <label for="searchInput"></label>
+                <input type="text" id="searchInput" name="searchInput" placeholder="Search" />
+            </form>
+        </div>
+        <button id="switch" class="btn changetheme" data-type="dark" style="background-color:lightpink; color:black">Dark mode</button>
+
+    </div>
+    <!-- Header Ends -->
+    <!-- Main Body Starts -->
+    <div class="mainBody">
+        <!-- Sidebar Starts -->
+        <div class="sidebar">
+            <div class="sidebar__categories">
+                <a href="../../index.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fas fa-home fa-2x"></i>
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a href="../../ytvideos.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fab fa-youtube fa-2x"></i>
+                        <span>Dev`s YT Videos</span>
+                    </div>
+                </a>
+                <a href="../../shows.html" class="active" style="text-decoration: none">
+                    <div class="sidebar__category" style="color:red">
+                        <i class="fas fa-tv fa-2x"></i>
+                        <span>Shows</span>
+                    </div>
+                </a>
+                <a href="../../movies.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fas fa-film fa-2x"></i>
+                        <span>Movies</span>
+                    </div>
+                </a>
+                <a href="../../Cricket.html" style="text-decoration: none">
+                    <div class="sidebar__category">
+                        <i class="fas fa-baseball-ball fa-2x"></i>
+                        <span>Cricket</span>
+                    </div>
+                </a>
+            </div>
+            <hr />
+            <div class="sidebar__categories">
+                <div class="sidebar__category">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Library</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">history</i>
+                    <span>History</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">play_arrow</i>
+                    <span>Your Videos</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">watch_later</i>
+                    <span>Watch Later</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Liked Videos</span>
+                </div>
+            </div>
+            <hr />
+        </div>
+        <!-- Sidebar Ends -->
+        <!-- Videos Section -->
+        <div class="videos">
+            <button id="backbtn" class="btn primary" onclick="location.reload()" style="background-color:#C83069; color:white; display:none">Back</button>
+            <h3>Haunting of the Hill House</h3>
+            <div id="switchaud" class="row">
+                <div class="col-sm-3">
+                    <button class="btn primary btn-lg read-btn" onclick="ShowEN('en')" style="background-color:#C83069; color:white; margin-bottom:10%">English</button>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn primary btn-lg read-btn" onclick="ShowEN('hi')" style="background-color:#C83069; color:white; margin-bottom:10%">Hindi/Dual</button>
+                </div>
+            </div>
+            <div id="en" style="display:none" class="container">
+                <div class="row">
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1-X_WGBnyZeYYOXmqhCwRRBzt6s47xNKV/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep1</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/109dkjOPt4C9-lWStRqSNrYiIm3LT0b-2/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep2</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/105zm2afKBl5gi5xNGnydlta7s5mbFe33/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep3</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1033kmG1ZEaGbiWw_Q6whKvQZKmRHMvFY/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep4</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1-db44p9qEsnqBZx7m8C1qkQKs1e-1esq/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep5</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1-yO3xKFe_KnycX6puK5yLeOeRtPhcoSJ/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep6</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1-pX_6gg8kQ-1wWR1xRj_EJMSY9TLsqwA/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep7</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/106c9m3sUGLM49uAa0dhhET_KBFgwhCQo/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep8</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1-a7QvAxqIttNze61DPsEWutFXnf3t6or/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep9</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/104O1SVsOCySFVBDknSQqXIx26k3J8xne/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep10</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hi" style="display:none" class="container">
+                <div class="row">
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1s3JYu7R2jcSnhZQzMSgT8_3f1vHPY40i/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep1</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1q-PhKUdQ00e3mLs7YS1EFB9FN-Z3w2gq/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep2</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1wGT8c7d3Aik0RFikjh7R-pRC7In42vkp/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep3</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1Wumtls7he3r57bCttm7QjSTrnG5q2sHJ/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep4</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1x_0dA_Xt2N3gS3XTA4l9Qk1G8S6pwag6/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep5</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1QYz94Z_LjpUjtvlU8eeLCpp_J9-RNxsS/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep6</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1395bXBgb3y6t3P7WmxHmvMOwpSJRL8OK/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep7</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1BMS_UzkUo7A0fLGyWsq85HPM5bqwdkWe/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep8</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1MChkl6PUHwiOD3x9Y_tfgrhKl5IqB4ma/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep9</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-md-4 col-lg-4">
+                        <div class="video">
+                            <iframe src="https://drive.google.com/file/d/1XPR5fp36j_pQAYtTON3nXgKHLQhY8KKY/preview" width="257.48" height="144.83" allow="autoplay" allowfullscreen></iframe>
+                            <h5>S1 Ep10</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer" id="myFooter">
+            <a href="../../index.html" style="text-decoration: none">
+                <div class="col-sm-2">
+                    <i class="fas fa-home fa-2x"></i>
+                    <span>Home</span>
+                </div>
+            </a>
+            <a href="../../ytvideos.html" style="text-decoration: none">
+                <div class="col-sm-2">
+                    <i class="fab fa-youtube fa-2x"></i>
+                    <span>My_YT</span>
+                </div>
+            </a>
+            <a href="../../shows.html" class="active" style="text-decoration: none">
+                <div class="col-sm-2" style="color:red">
+                    <i class="fas fa-tv fa-2x"></i>
+                    <span>Shows</span>
+                </div>
+            </a>
+            <a href="../../movies.html" style="text-decoration: none">
+                <div class="col-sm-2">
+                    <i class="fas fa-film fa-2x"></i>
+                    <span>Movies</span>
+                </div>
+            </a>
+            <a href="../../Cricket.html" style="text-decoration: none">
+                <div class="col-sm-2">
+                    <i class="fas fa-baseball-ball fa-2x"></i>
+                    <span>Cricket</span>
+                </div>
+            </a>
+        </div>
+        <script src="../../index.js"></script>
+        <script src="../../search.js"></script>
+        <!-- Main Body Ends -->
+</body>
+</html>
