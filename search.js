@@ -170,7 +170,7 @@ $("#searchInput").on("keydown", function () {
             category: "Shows"
         },
         {
-            label: "Haunting of the Hill House",
+            label: "The Haunting of Hill House",
             icon: "resources/shows/hauntingofthehillhouse.jpg",
             link: "resources/shows/hauntingofthehillhouse.html",
             category: "Shows"
